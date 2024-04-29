@@ -1,0 +1,51 @@
+#wrapper{
+    display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-areas:"header header header"
+                    "nav nav nav"
+                    "sidebar main main"
+    "footer footer footer";}
+div{border: 1px solid black;}
+
+#header{grid-area:header;
+font-size: 90px;
+    background-color:antiquewhite;
+}
+
+#nav{grid-area:nav;}
+
+#main{grid-area:main;
+background-color:antiquewhite;}
+
+#sidebar{grid-area:sidebar;
+font-size: 40px;
+background-color: beige}
+
+#footer{grid-area:footer;
+background-color:beige;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: beige;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: black;
+}
+img{width: 300px;}
